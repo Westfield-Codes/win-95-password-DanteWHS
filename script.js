@@ -21,11 +21,11 @@ function checkPassword(){
     if (userName==crUser && password== crPW) {
     let box = document.getElementsByClassName("box");
     box[0].remove();
-    body.style.backgroundImage = "url ('http://i.imgur.com/IUVDNyp.jpg')";
+    body.style.backgroundImage = "url('http://i.imgur.com/IUVDNyp.jpg')";
     }
     else {
-        userName = "";
-        password = "";
+        dialogs.querySelector(':nth-child(2)').value="";
+        dialogs.querySelector(':nth-child(4)').value = "";
         body.style.backgroundColor = "red";
     }
 }
